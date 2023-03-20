@@ -1,0 +1,108 @@
+[debug] [2023-03-20T11:03:15.765Z] ----------------------------------------------------------------------
+[debug] [2023-03-20T11:03:15.768Z] Command:       /home/shoyo/.nvm/versions/node/v18.12.1/bin/node /home/shoyo/.nvm/versions/node/v18.12.1/bin/firebase init
+[debug] [2023-03-20T11:03:15.769Z] CLI Version:   11.24.1
+[debug] [2023-03-20T11:03:15.769Z] Platform:      linux
+[debug] [2023-03-20T11:03:15.769Z] Node Version:  v18.12.1
+[debug] [2023-03-20T11:03:15.770Z] Time:          Mon Mar 20 2023 16:33:15 GMT+0530 (India Standard Time)
+[debug] [2023-03-20T11:03:15.770Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-20T11:03:15.779Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-20T11:03:15.780Z] > authorizing via signed-in user (nitishbhargav02102000@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/shoyo/Code/react/smallProjects/todolist2
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-20T11:03:48.663Z] > refreshing access token with scopes: []
+[debug] [2023-03-20T11:03:48.670Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-03-20T11:03:48.671Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-20T11:03:49.314Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-03-20T11:03:49.315Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-03-20T11:03:49.345Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-03-20T11:03:50.788Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-03-20T11:03:50.789Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todoapp-69fc5 (todoapp) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-03-20T11:03:58.193Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-03-20T11:03:58.193Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/todoapp-69fc5
+[debug] [2023-03-20T11:04:00.979Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com 200
+[debug] [2023-03-20T11:04:00.979Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com [omitted]
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-03-20T11:04:00.981Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-03-20T11:04:00.981Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/todoapp-69fc5
+[debug] [2023-03-20T11:04:03.433Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-03-20T11:04:03.433Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-03-20T11:04:13.445Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-03-20T11:04:13.446Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/todoapp-69fc5
+[debug] [2023-03-20T11:04:15.723Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com 200
+[debug] [2023-03-20T11:04:15.723Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todoapp-69fc5/services/firebasedatabase.googleapis.com [omitted]
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-03-20T11:04:15.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-69fc5 [none]
+[debug] [2023-03-20T11:04:17.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-69fc5 200
+[debug] [2023-03-20T11:04:17.976Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-69fc5 {"projectId":"todoapp-69fc5","projectNumber":"171672236608","displayName":"todoapp","name":"projects/todoapp-69fc5","resources":{"hostingSite":"todoapp-69fc5"},"state":"ACTIVE","etag":"1_cffa98b3-98a9-419e-b4f2-a11fa4fbe626"}
+[debug] [2023-03-20T11:04:55.740Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances databaseId=todoapp-69fc5-default-rtdb&validateOnly=true
+[debug] [2023-03-20T11:04:55.741Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-03-20T11:04:58.526Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances 200
+[debug] [2023-03-20T11:04:58.526Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances {"name":"projects/171672236608/locations/us-central1/instances/todoapp-69fc5-default-rtdb","project":"projects/171672236608","databaseUrl":"https://todoapp-69fc5-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-03-20T11:04:58.529Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances databaseId=todoapp-69fc5-default-rtdb
+[debug] [2023-03-20T11:04:58.530Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-03-20T11:05:00.369Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances 200
+[debug] [2023-03-20T11:05:00.370Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/todoapp-69fc5/locations/us-central1/instances {"name":"projects/171672236608/locations/us-central1/instances/todoapp-69fc5-default-rtdb","project":"projects/171672236608","databaseUrl":"https://todoapp-69fc5-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-03-20T11:05:29.724Z] >>> [apiv2][query] GET https://todoapp-69fc5-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-03-20T11:05:32.520Z] <<< [apiv2][status] GET https://todoapp-69fc5-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-03-20T11:05:32.520Z] <<< [apiv2][body] GET https://todoapp-69fc5-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] ✔  Database Rules for todoapp-69fc5-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-03-20T11:06:41.278Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-03-20T11:06:41.585Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-03-20T11:06:41.586Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.18.0","browserURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.18.0/firebase.tgz"},"live":{"version":"9.18","browserURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.18/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.18.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.18.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.18.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.18.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.18.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.18.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.18.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.18.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/shoyo/Code/react/smallProjects/todolist2 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=461980405&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-03-20T11:06:45.856Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-03-20T11:06:45.857Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-03-20T11:06:46.691Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-03-20T11:06:46.692Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-03-20T11:06:46.704Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-03-20T11:06:47.900Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-03-20T11:06:47.901Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ze-n","id":72332746,"node_id":"MDQ6VXNlcjcyMzMyNzQ2","avatar_url":"https://avatars.githubusercontent.com/u/72332746?v=4","gravatar_id":"","url":"https://api.github.com/users/ze-n","html_url":"https://github.com/ze-n","followers_url":"https://api.github.com/users/ze-n/followers","following_url":"https://api.github.com/users/ze-n/following{/other_user}","gists_url":"https://api.github.com/users/ze-n/gists{/gist_id}","starred_url":"https://api.github.com/users/ze-n/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ze-n/subscriptions","organizations_url":"https://api.github.com/users/ze-n/orgs","repos_url":"https://api.github.com/users/ze-n/repos","events_url":"https://api.github.com/users/ze-n/events{/privacy}","received_events_url":"https://api.github.com/users/ze-n/received_events","type":"User","site_admin":false,"name":"Shoyo","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":31,"public_gists":0,"followers":1,"following":1,"created_at":"2020-10-04T06:33:11Z","updated_at":"2023-02-06T09:20:04Z","private_gists":0,"total_private_repos":1,"owned_private_repos":0,"disk_usage":7512,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as ze-n 
+[info] 
+[debug] [2023-03-20T11:07:26.728Z] >>> [apiv2][query] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key type=owner
+[debug] [2023-03-20T11:07:27.412Z] <<< [apiv2][status] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key 404
+[debug] [2023-03-20T11:07:27.413Z] <<< [apiv2][body] GET https://api.github.com/repos/firebase deploy/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
